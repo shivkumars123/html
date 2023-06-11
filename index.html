@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Web Page</title>
+  <title>Resume - Shivkumar Shinde</title>
   <style>
-    /* CSS styles */
     body {
       font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
     }
-    
-    header {
-      background-color: #333;
-      color: #fff;
+    #container {
+      width: 800px;
+      margin: 0 auto;
+      background-color: white;
       padding: 20px;
-      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    
     h1 {
-      margin: 0;
+      color: #333333;
     }
-    
-    #content {
-      margin: 20px;
+    h2 {
+      color: #666666;
     }
-    
-    button {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    
-    #output {
-      margin-top: 20px;
-      padding: 10px;
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Web Page</h1>
-  </header>
-  
-  <div id="content">
-    <h2>Click the button to change the text</h2>
-    <button id="changeTextButton">Change Text</button>
-    <div id="output"></div>
+  <div id="container">
+    <img src="profile_image.jpg" alt="Profile Image">
+    <h1>Shivkumar Shinde</h1>
+    <h2>Education: Tech</h2>
+    <h2>Hobby: Reading Books</h2>
+    <h2>Languages: Python, Java</h2>
+    <h2>Experience:</h2>
+    <ul>
+      <li>Company XYZ - Python Developer (2019-2021)</li>
+      <li>Company ABC - Java Developer (2017-2019)</li>
+    </ul>
+    <h2>Skills:</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+    </ul>
   </div>
-
-  <script>
-    // JavaScript code
-    var button = document.getElementById("changeTextButton");
-    var output = document.getElementById("output");
-    
-    button.addEventListener("click", function() {
-      output.innerHTML = "Text changed!";
-    });
-  </script>
 </body>
 </html>
